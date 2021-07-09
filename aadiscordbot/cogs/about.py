@@ -32,18 +32,18 @@ class About(commands.Cog):
 
         embed = Embed(title="AuthBot: The Authening")
         embed.set_thumbnail(
-            url="https://cdn.discordapp.com/icons/516758158748811264/ae3991584b0f800b181c936cfc707880.webp?size=128"
+            url="https://cdn.discordapp.com/icons/713666554629455892/a4c362c2037b239f2c3ef4aeeda9375a.png?size=128"
         )
         embed.colour = Color.blue()
 
-        embed.description = "This is a multi-de-functional discord bot tailored specifically for Alliance Auth Shenanigans."
+        embed.description = "This is a multi-de-functional discord bot tailored specifically for miller cunts."
         regex = r"^(.+)\/d.+"
 
         matches = re.finditer(regex, settings.DISCORD_CALLBACK_URL, re.MULTILINE)
 
         for m in matches:
             url = m.groups()
-        embed.set_footer(text="Lovingly developed for Init.™ by AaronRin and ArielKable")
+        embed.set_footer(text="Lovingly developed for V0LTA.™ by Miller Thwots")
 
         embed.add_field(
             name="Number of Servers:", value=len(self.bot.guilds), inline=True
